@@ -20,7 +20,7 @@
     right: 0px;
     left:0px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -30,6 +30,6 @@
   }
   .icon {
     color: red;
-    font-size: 24px;
+    font-size: 32px;
     margin-left: 10px;
   }
