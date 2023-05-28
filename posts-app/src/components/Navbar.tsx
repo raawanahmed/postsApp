@@ -9,9 +9,9 @@ import { AiFillHome, AiFillHeart } from "react-icons/ai";
 export default function NavBar() {
   const path = usePathname();
 
-  const [widthOfScreen, setWidth] = useState<number>(0);
-  const [homeIconColor, setHomeIconColor] = useState("black");
-  const [lickedIconColor, setLikedIconColor] = useState("white");
+  const [widthOfScreen, setWidth] = useState<number>(window.innerWidth);
+  const [homeIconColor, setHomeIconColor] = useState("");
+  const [lickedIconColor, setLikedIconColor] = useState("");
 
   const handleHomeIconClick = () => {
     setHomeIconColor("black");
@@ -29,6 +29,7 @@ export default function NavBar() {
     };
     window.addEventListener("resize", handleResize);
     setWidth(window.innerWidth);
+    //console.log(window.innerWidth);
     return () => {
       window.removeEventListener("resize", handleResize);
     };

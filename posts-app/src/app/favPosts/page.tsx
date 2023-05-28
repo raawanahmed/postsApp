@@ -3,6 +3,7 @@
 import styles from "../page.module.css";
 import { usePostContext } from "@/context/context";
 import ListOfPosts from "@/components/ListOfPosts";
+import Loading from "@/components/LoadingPosts";
 
 export default function Home() {
   const { dummyPosts } = usePostContext();
@@ -10,10 +11,10 @@ export default function Home() {
 
   return (
     <div className={styles.layout}>
-      {favoritePosts.length > 0 ? (
-        <ListOfPosts postsList={favoritePosts} />
+      {dummyPosts == null ? (
+        <Loading />
       ) : (
-        <p className={styles.noFavPosts}>There is no liked posts!</p>
+        <ListOfPosts postsList={favoritePosts} />
       )}
     </div>
   );

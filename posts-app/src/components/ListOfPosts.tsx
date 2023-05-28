@@ -13,7 +13,7 @@ export default function ListOfPosts({
     <>
       {postsList == null ? (
         <LoadingPosts />
-      ) : (
+      ) : postsList && postsList.length > 0 ? (
         <div>
           {postsList.map((post, idx) => (
             <div className={styles.layout} key={idx}>
@@ -23,6 +23,8 @@ export default function ListOfPosts({
             </div>
           ))}
         </div>
+      ) : (
+        <p className={styles.noFavPosts}>There is no liked posts!</p>
       )}
     </>
   );
