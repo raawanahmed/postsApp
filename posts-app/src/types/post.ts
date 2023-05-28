@@ -1,7 +1,5 @@
-import exp from "constants";
-
 export type PostDetails = {
-  id: number;
+  id: string;
   postImgLink: string;
   postDescription: string;
   postTitle: string;
@@ -15,9 +13,14 @@ export type PostDetails = {
   tags: string[];
 };
 
+export type postContextType = {
+  dummyPosts: PostDetails[];
+  toggleIsFavPost: (postId: string, isFav: boolean) => boolean;
+};
+
 const dummyPosts: PostDetails[] = [
   {
-    id: 1,
+    id: "1",
     postImgLink:
       "https://images.unsplash.com/photo-1684174534027-21968a4479f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
     postDescription: "Beautiful sunset view by the sea",
@@ -43,7 +46,7 @@ const dummyPosts: PostDetails[] = [
     ],
   },
   {
-    id: 2,
+    id: "2",
     postImgLink:
       "https://images.unsplash.com/photo-1684690640456-381bc7183e86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1288&q=80",
     postDescription: "Bonfire under the starry night sky",
@@ -69,7 +72,7 @@ const dummyPosts: PostDetails[] = [
     ],
   },
   {
-    id: 3,
+    id: "3",
     postImgLink:
       "https://images.unsplash.com/photo-1682252913872-2ec60d4b0818?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1189&q=80",
     postDescription: "Colorful hot air balloons soaring in the sky",
@@ -93,7 +96,7 @@ const dummyPosts: PostDetails[] = [
     ],
   },
   {
-    id: 4,
+    id: "4",
     postImgLink:
       "https://images.unsplash.com/photo-1684409915974-2e3c9f9effc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
     postDescription:
@@ -119,7 +122,7 @@ const dummyPosts: PostDetails[] = [
     ],
   },
   {
-    id: 5,
+    id: "5",
     postImgLink:
       "https://images.unsplash.com/photo-1595433506055-228e45746b95?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1947&q=80",
     postDescription:
@@ -148,7 +151,7 @@ const dummyPosts: PostDetails[] = [
     ],
   },
   {
-    id: 6,
+    id: "6",
     postImgLink:
       "https://images.unsplash.com/photo-1683249047864-685e8d9f2c41?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
     postDescription:
@@ -174,7 +177,7 @@ const dummyPosts: PostDetails[] = [
     ],
   },
   {
-    id: 7,
+    id: "7",
     postImgLink:
       "https://images.unsplash.com/photo-1683752590938-e3b687c1f344?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80",
     postDescription:
@@ -198,7 +201,7 @@ const dummyPosts: PostDetails[] = [
     ],
   },
   {
-    id: 8,
+    id: "8",
     postImgLink:
       "https://images.unsplash.com/photo-1683085809775-d9ac53fcbe21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
     postDescription:
@@ -222,7 +225,7 @@ const dummyPosts: PostDetails[] = [
     ],
   },
   {
-    id: 9,
+    id: "9",
     postImgLink:
       "https://images.unsplash.com/photo-1683918027458-319f01af78db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
     postDescription:
@@ -247,7 +250,7 @@ const dummyPosts: PostDetails[] = [
     ],
   },
   {
-    id: 10,
+    id: "10",
     postImgLink:
       "https://images.unsplash.com/photo-1684216116726-a6d0cea8e93f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
     postDescription:

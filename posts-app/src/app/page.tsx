@@ -1,13 +1,12 @@
-import CircularImage from "@/components/CircularImg";
-import PostFooter from "@/components/PostFooter";
-import PostHeader from "@/components/PostHeader";
-import PostImg from "@/components/PostImg";
+"use client";
+
 import styles from "./page.module.css";
-import dummyPosts, { PostDetails } from "@/types/post";
-
-
+//import dummyPosts from "@/types/post";
+import { usePostContext } from "@/context/context";
 import ListOfPosts from "@/components/ListOfPosts";
 export default function Home() {
+
+  const { dummyPosts } = usePostContext();
   return (
     <div className={styles.layout}>
       <ListOfPosts postsList={dummyPosts}></ListOfPosts>
