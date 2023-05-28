@@ -9,19 +9,8 @@ export default function NavBar() {
   const path = usePathname();
 
   const [widthOfScreen, setWidth] = useState<number>(0);
-  const [homeIconColor, setHomeIconColor] = useState("");
-  const [likedIconColor, setLikedIconColor] = useState("");
   const [isLoaded, setIsLoaded] = useState(false);
 
-  const handleHomeIconClick = useCallback(() => {
-    setHomeIconColor("black");
-    setLikedIconColor("white");
-  }, []);
-
-  const handleLikedIconClick = useCallback(() => {
-    setHomeIconColor("white");
-    setLikedIconColor("black");
-  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -49,8 +38,6 @@ export default function NavBar() {
         ) : (
           <AiFillHome
             className={styles.icons}
-            color={homeIconColor}
-            onClick={handleHomeIconClick}
           />
         )}
       </Link>
@@ -64,8 +51,6 @@ export default function NavBar() {
         ) : (
           <AiFillHeart
             className={styles.icons}
-            color={likedIconColor}
-            onClick={handleLikedIconClick}
           />
         )}
       </Link>

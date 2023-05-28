@@ -26,7 +26,7 @@ export default function ListOfPosts({
   }
 
   if (postsList.length === 0) {
-    return <p className={styles.noFavPosts}>There is no posts {":("}</p>;
+    return <p className={styles.noFavPosts}>There are no posts</p>;
   }
 
   return (
