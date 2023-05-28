@@ -69,3 +69,9 @@ npm run dev
 ```
 Open your browser and access the project at http://localhost:3000.
 
+## Here’s a demo
+- For Mobile design: https://drive.google.com/file/d/1tF1eYkRYMMTXzB11-PCudJBdSltBLdcJ/view?usp=drive_link
+- For Desktop design: https://drive.google.com/file/d/1BN7P1_nQTllxRLpr4HdMvHRHQUmoW2f-/view?usp=drive_link
+
+
+
