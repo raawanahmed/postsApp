@@ -17,7 +17,7 @@ a {
 }
 
 /* Mobile */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   body {
     width: 100%;
     padding-bottom: 70px;
@@ -29,7 +29,7 @@ a {
 }
 
 /* Desktop */
-@media (min-width: 601px) {
+@media (min-width: 701px) {
   body {
     width: 50%;
     padding-top: 30px;
@@ -37,17 +37,18 @@ a {
     margin: auto;
   }
   ::-webkit-scrollbar {
-    width: 8px;
+    width: 12px;
   }
 }
 
 ::-webkit-scrollbar-track {
-  background: #797979;
+  background: #9d9b9bb0;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #cdcdcd;
-  border-radius: 5px;
+  background: #786e6eb7;
+  border-radius: 7px;
+  padding: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
