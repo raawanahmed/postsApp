@@ -1,6 +1,6 @@
 # Posts App Documentation
 ## Introduction
-This documentation provides an overview of a Next.js project and its components. The project includes pages for displaying favorite posts and all posts, along with various reusable components and a context for managing post data.
+This project includes pages for displaying favorite posts and all posts, along with various reusable components and a context for managing post data.
 
 ## Features
 1. Well-designed layout
