@@ -10,13 +10,13 @@
   right: 0;
   background-color: rgba(252, 97, 156, 255);
 
-  &.active {
+  .active {
     font-size: 20px;
     font-weight: bold;
     color: black;
   }
 
-  &.notActive {
+  .notActive {
     font-size: 20px;
     color: white;
   }
