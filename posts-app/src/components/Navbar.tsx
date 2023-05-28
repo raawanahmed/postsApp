@@ -9,9 +9,11 @@ import { AiFillHome, AiFillHeart } from "react-icons/ai";
 export default function NavBar() {
   const path = usePathname();
 
-  const [widthOfScreen, setWidth] = useState<number>(window.innerWidth);
+  const [widthOfScreen, setWidth] = useState<number>(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
   const [homeIconColor, setHomeIconColor] = useState("");
-  const [lickedIconColor, setLikedIconColor] = useState("");
+  const [likedIconColor, setLikedIconColor] = useState("");
 
   const handleHomeIconClick = () => {
     setHomeIconColor("black");
@@ -27,11 +29,16 @@ export default function NavBar() {
     const handleResize = () => {
       setWidth(window.innerWidth);
     };
-    window.addEventListener("resize", handleResize);
-    setWidth(window.innerWidth);
-    //console.log(window.innerWidth);
+
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleResize);
+      setWidth(window.innerWidth);
+    }
+
     return () => {
-      window.removeEventListener("resize", handleResize);
+      if (typeof window !== "undefined") {
+        window.removeEventListener("resize", handleResize);
+      }
     };
   }, []);
   return (
@@ -58,7 +65,7 @@ export default function NavBar() {
         {widthOfScreen <= 600 ? (
           <AiFillHeart
             className={styles.icons}
-            color={lickedIconColor}
+            color={likedIconColor}
             onClick={handleLikedIconClick}
           />
         ) : (

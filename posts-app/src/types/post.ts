@@ -22,6 +22,97 @@ const dummyPosts: PostDetails[] = [
   {
     id: "1",
     postImgLink:
+      "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    postDescription: "Amazing view of the pyramids in Egypt!",
+    postTitle: "Exploring the Ancient Wonders",
+    postCaption: "Captured this breathtaking scene during my trip to Cairo.",
+    profileImgLink:
+      "https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80",
+    userName: "SailorAdventurer",
+    userFullName: "Emily Johnson",
+    isPostFav: false,
+    numberOfLikes: 5,
+    numberOfComments: 9,
+    tags: ["Egypt", "Pyramids", "TravelImages", "Cairo"],
+  },
+  {
+    id: "2",
+    postImgLink:
+      "https://images.unsplash.com/photo-1502640403806-cf2ac7a5d37a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    postDescription: "Sailing across the tranquil waters of Egypt.",
+    postTitle: "Serene Sailboat Journey",
+    postCaption: "Embracing the beauty of Egypt's coastline.",
+    profileImgLink:
+      "https://images.unsplash.com/photo-1628338516799-2e64c9baeb65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80",
+    userName: "KarReimanis",
+    userFullName: "Karlis Reimanis",
+    isPostFav: false,
+    numberOfLikes: 5,
+    numberOfComments: 9,
+    tags: ["Egypt", "Sailboat", "Sail", "SandDune", "BlueSky", "Waterway"],
+  },
+  {
+    id: "3",
+    postImgLink:
+      "https://images.unsplash.com/photo-1602243313539-574f226fee77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    postDescription: "Stunning view of Cairo from the bridge.",
+    postTitle: "Cityscape Marvel",
+    postCaption: "Gazing at the vibrant cityscape of Cairo.",
+    profileImgLink:
+      "https://images.unsplash.com/photo-1675117621719-601d35ab5673?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+    userName: "CityExplorer",
+    userFullName: "Sophia Rodriguez",
+    isPostFav: false,
+    numberOfLikes: 5,
+    numberOfComments: 9,
+    tags: [
+      "Egypt",
+      "Cairo",
+      "Bridge",
+      "CairoTower",
+      "Nile",
+      "Hilton",
+      "River",
+      "Town",
+    ],
+  },
+
+  {
+    id: "4",
+    postImgLink:
+      "https://images.unsplash.com/photo-1626692880062-35c360fb6afc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    postDescription: "Admiring the majestic Cairo Tower and the Nile River.",
+    postTitle: "Iconic Cairo Landmarks",
+    postCaption: "Capturing the essence of Cairo's beauty.",
+    profileImgLink:
+      "https://images.unsplash.com/photo-1585728748176-455ac5eed962?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+    userName: "EgyptExplorer",
+    userFullName: "Mariam Mohamed",
+    isPostFav: false,
+    numberOfLikes: 5,
+    numberOfComments: 9,
+    tags: ["Egypt", "Cairo", "CairoTower", "Nile", "River", "Town"],
+  },
+  {
+    id: "5",
+    postImgLink:
+      "https://images.unsplash.com/photo-1557851715-f87d15716b9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+    postDescription:
+      "Mesmerizing view of Qesm Nwebaa in the South Sinai Governorate.",
+    postTitle: "Natural Beauty of Qesm Nwebaa",
+    postCaption: "Discovering the hidden gem of South Sinai.",
+    profileImgLink:
+      "https://images.unsplash.com/photo-1613061886834-92a52edf31f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    userName: "NatureExplorer",
+    userFullName: "Olivia Hernandez",
+    isPostFav: false,
+    numberOfLikes: 5,
+    numberOfComments: 9,
+    tags: ["Egypt", "QesmNwebaa", "SouthSinaiGovernorate"],
+  },
+  {
+    id: "6",
+    postImgLink:
       "https://images.unsplash.com/photo-1684174534027-21968a4479f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
     postDescription: "Beautiful sunset view by the sea",
     postTitle: "Sunset Serenity",
@@ -46,7 +137,7 @@ const dummyPosts: PostDetails[] = [
     ],
   },
   {
-    id: "2",
+    id: "7",
     postImgLink:
       "https://images.unsplash.com/photo-1684690640456-381bc7183e86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1288&q=80",
     postDescription: "Bonfire under the starry night sky",
@@ -72,7 +163,7 @@ const dummyPosts: PostDetails[] = [
     ],
   },
   {
-    id: "3",
+    id: "8",
     postImgLink:
       "https://images.unsplash.com/photo-1682252913872-2ec60d4b0818?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1189&q=80",
     postDescription: "Colorful hot air balloons soaring in the sky",
@@ -96,7 +187,7 @@ const dummyPosts: PostDetails[] = [
     ],
   },
   {
-    id: "4",
+    id: "9",
     postImgLink:
       "https://images.unsplash.com/photo-1684409915974-2e3c9f9effc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
     postDescription:
@@ -122,7 +213,7 @@ const dummyPosts: PostDetails[] = [
     ],
   },
   {
-    id: "5",
+    id: "10",
     postImgLink:
       "https://images.unsplash.com/photo-1595433506055-228e45746b95?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1947&q=80",
     postDescription:
@@ -151,7 +242,7 @@ const dummyPosts: PostDetails[] = [
     ],
   },
   {
-    id: "6",
+    id: "11",
     postImgLink:
       "https://images.unsplash.com/photo-1683249047864-685e8d9f2c41?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
     postDescription:
@@ -177,7 +268,7 @@ const dummyPosts: PostDetails[] = [
     ],
   },
   {
-    id: "7",
+    id: "12",
     postImgLink:
       "https://images.unsplash.com/photo-1683752590938-e3b687c1f344?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80",
     postDescription:
@@ -201,7 +292,7 @@ const dummyPosts: PostDetails[] = [
     ],
   },
   {
-    id: "8",
+    id: "13",
     postImgLink:
       "https://images.unsplash.com/photo-1683085809775-d9ac53fcbe21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
     postDescription:
@@ -225,7 +316,7 @@ const dummyPosts: PostDetails[] = [
     ],
   },
   {
-    id: "9",
+    id: "14",
     postImgLink:
       "https://images.unsplash.com/photo-1683918027458-319f01af78db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
     postDescription:
@@ -250,7 +341,7 @@ const dummyPosts: PostDetails[] = [
     ],
   },
   {
-    id: "10",
+    id: "15",
     postImgLink:
       "https://images.unsplash.com/photo-1684216116726-a6d0cea8e93f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
     postDescription:
