@@ -48,6 +48,13 @@ This context provider component manages the state of post data. It initializes t
 
 To use the context, import the postsContext and usePostContext from @/context/context. Wrap your components with the PostsContextProvider to access the post data and toggle functions.
 
+## Technologies used
+- Next.js: Next.js is a framework for building server-side rendered React applications. It is used as the main framework for this project.
+- React: React is a library for building user interfaces. It is used in the project for creating reusable components and managing the application's UI.
+- TypeScript: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. It is used in this project to add static typing and improve the overall code quality.
+-  React Icons: React Icons is a library that provides a collection of popular icons as React components. It is used in the project to display icons for various UI elements.
+- React Context API: React Context API is a feature of React that allows data to be passed through the component tree without explicitly passing props. It is used in the project to manage post data using a context provider.
+- Local Storage: Local Storage is a web browser API that allows data to be stored locally on the user's device. It is used in the project to persist the posts data across page reloads.
 ## How to Use the project
 To use this project, follow the steps below:
 
