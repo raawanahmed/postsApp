@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useCallback, useEffect, useState } from "react";
-import styles from "../styles/nav-bar.module.css";
+import styles from "../styles/nav-bar.module.scss";
 import { AiFillHome, AiFillHeart } from "react-icons/ai";
 
 export default function NavBar() {

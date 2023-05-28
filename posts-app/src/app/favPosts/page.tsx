@@ -10,7 +10,11 @@ export default function Home() {
 
   return (
     <div className={styles.layout}>
-      <ListOfPosts postsList={favoritePosts} />
+      {favoritePosts.length > 0 ? (
+        <ListOfPosts postsList={favoritePosts} />
+      ) : (
+        <p className={styles.noFavPosts}>There is no liked posts!</p>
+      )}
     </div>
   );
 }

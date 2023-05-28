@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import styles from "../styles/post-img.module.css";
+import styles from "../styles/post-img.module.scss";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { PostDetails } from "@/types/post";
 import { usePostContext } from "@/context/context";

@@ -1,4 +1,4 @@
-import styles from "../styles/post-footer.module.css";
+import styles from "../styles/post-footer.module.scss";
 import { ReactElement } from "react";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { PostDetails } from "@/types/post";

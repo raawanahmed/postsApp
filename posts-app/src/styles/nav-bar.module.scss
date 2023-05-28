@@ -9,32 +9,29 @@
   left: 0;
   right: 0;
   background-color: rgba(252, 97, 156, 255);
-}
 
-.active {
-  font-size: 20px;
-  font-weight: bold;
-  color: black;
-}
-.notActive{
-  font-size: 20px;
-  color: white;
-}
+  &.active {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+  }
 
-.icons {
-  font-size: 35px;
-}
+  &.notActive {
+    font-size: 20px;
+    color: white;
+  }
 
-@media (max-width: 600px) {
-  .navbar {
+  .icons {
+    font-size: 35px;
+  }
+
+  @media (max-width: 600px) {
     bottom: 0;
   }
-}
 
-@media (min-width: 601px) {
-  .navbar {
+  @media (min-width: 601px) {
     top: 0;
     width: 50%;
-    margin:auto
+    margin: auto;
   }
 }

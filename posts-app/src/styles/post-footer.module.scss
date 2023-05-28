@@ -1,0 +1,38 @@
+.footer {
+  padding: 4px 12px;
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-size: 13px;
+
+  .postLikes {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: rgba(77, 91, 203, 255);
+  }
+
+  .postCaptions {
+    margin-bottom: 4px;
+    color: rgba(149, 149, 149, 255);
+  }
+
+  .postTags {
+    margin-bottom: 12px;
+    color: rgba(101, 114, 209, 255);
+  }
+
+  .postComments {
+    color: rgba(184, 184, 184, 255);
+    font-size: 12px;
+  }
+
+  .icon {
+    font-size: 20px;
+    cursor: pointer;
+  }
+}

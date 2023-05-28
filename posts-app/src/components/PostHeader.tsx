@@ -1,5 +1,5 @@
 import { BsThreeDots } from "react-icons/bs";
-import styles from "../styles/post-header.module.css";
+import styles from "../styles/post-header.module.scss";
 import CircularImage from "./CircularImg";
 import { PostDetails } from "@/types/post";
 export default function PostHeader({ postData }: { postData: PostDetails }) {
