@@ -3,8 +3,6 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import PostsContextProvider from "@/context/context";
 import NavBar from "@/components/Navbar";
-import { useEffect, useState } from "react";
-import Loading from "@/components/LoadingPosts";
 
 const inter = Inter({ subsets: ["latin"] });
 
