@@ -6,7 +6,7 @@ export default function PostHeader({ postData }: { postData: PostDetails }) {
   return (
     <div className={styles.headerContainer}>
       <div className={styles.imgWithText}>
-        <CircularImage userPP={postData.profileImgLink}></CircularImage>
+        <CircularImage userProfilePic={postData.profileImgLink}></CircularImage>
         <div>
           <p className={styles.name}> {postData.userFullName}</p>
           <p className={styles.username}>{postData.userName}</p>

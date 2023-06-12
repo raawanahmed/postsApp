@@ -13,7 +13,12 @@ export default function PostImg({ postData }: { postData: PostDetails }) {
 
   return (
     <div className={styles.post}>
-      <Image src={postData.postImgLink} alt="" width={500} height={500}></Image>
+      <Image
+        src={postData.postImgLink}
+        alt={"Post Image"}
+        width={500}
+        height={500}
+      ></Image>
       <div className={styles.imgFooter}>
         <div>
           <p>{postData.postDescription} </p>
